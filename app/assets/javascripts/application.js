@@ -25,5 +25,5 @@ $.get('leaderboard.json', function(data) {
             teamLeading = data[i].name;
         }
     }
-    $('body').append('<div id="leader">' + teamLeading + '</div>');
+    $('body').append('<div id="leader">teamleading: ' + teamLeading + '</div>');
 })
