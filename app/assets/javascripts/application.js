@@ -16,4 +16,14 @@
 //= require_tree .
 //
 
-$.get('leaderboard.json', function(data) { console.log(data); })
+$.get('leaderboard.json', function(data) {
+    var highPoints = 0;
+    var teamLeading = '';
+    for(i in data) {
+        if(data[i].points > highPoints) {
+            highPoints = data[i].points;
+            teamLeading = data[i].name;
+        }
+    }
+    $('body').append('<div id="leader">teamleading: ' + teamLeading + '</div>');
+})
