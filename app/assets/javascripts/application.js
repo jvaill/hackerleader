@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//
+
+$.get('leaderboard.json', function(data) { console.log(data); })
