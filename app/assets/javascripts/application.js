@@ -26,4 +26,5 @@ $.get('leaderboard.json', function(data) {
         }
     }
     $('body').append('<div id="leader">teamleading: ' + teamLeading + '</div>');
+    alert('done!');
 })
